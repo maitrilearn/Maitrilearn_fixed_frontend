@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>AI Teacher Board</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>🏫 AI Teacher Board</h1>
+
+  <textarea
+    id="teacherQuestion"
+    placeholder="Ask any topic..."
+  ></textarea>
+
+  <br><br>
+
+  <button onclick="startTeaching()">
+    Start Teaching
+  </button>
+
+  <br><br>
+
+  <div id="teacherStatus"></div>
+
+  <canvas
+    id="whiteboardCanvas"
+    width="1200"
+    height="600"
+    style="
+      width:100%;
+      background:#0f172a;
+      border-radius:12px;
+      margin-top:20px;
+      border:2px solid #1e293b;
+    "
+  ></canvas>
+
+  <div
+    id="whiteboard"
+    style="
+      margin-top:20px;
+      background:#111827;
+      color:#22c55e;
+      padding:20px;
+      border-radius:12px;
+      min-height:200px;
+      white-space:pre-wrap;
+      font-size:20px;
+      line-height:1.8;
+      font-family:monospace;
+    "
+  ></div>
+
+</div>
+
+<script src="js/config.js"></script>
+
+<script src="js/services/apiService.js"></script>
+
+<script src="js/whiteboard.js"></script>
+
+</body>
+</html>
